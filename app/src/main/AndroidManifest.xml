@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.administrator.coolweather">
+<uses-permission android:name="android.permission.INTERNET"/>
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/backg"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+    <activity
+        android:name="com.example.administrator.coolweather.activity.ChooseAreaActivity"
+        android:label="壮丽山河" >
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+    </activity>
+    <activity android:name="com.example.administrator.coolweather.activity.WeatherActivity"></activity>
+    <service android:name="com.example.administrator.coolweather.service.AutoUpdateService"></service>
+    <receiver android:name="com.example.administrator.coolweather.receiver.AutoUpdateReceiver"></receiver>
+</application>
+</manifest>
+
